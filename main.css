@@ -1,0 +1,46 @@
+/*Разметка контейнера*/
+body {
+	background-color: #466874;
+}
+.container {
+	margin: 0 auto ;
+	width: 100%;
+	max-width: 1200px;
+}
+/*Разметка головы*/
+.header {
+	height: 100px;
+	background-color: #2b2f3d;
+	
+}
+article {
+	
+	display: flex;
+	height: 400px;
+	background-color: #4f4e47;
+	color: #9f926e;
+
+}
+a {
+	text-decoration: none;
+	color: #f7f7e2
+}
+.item {
+	margin: 0 auto ;
+	
+	max-width: 200px;
+	justify-content: center;
+	width: 250px;
+    height: 350px;
+    background-color: #9f926e;
+    border-radius: 25px;
+    border: 1px solid 
+}
+
+.head {
+	height: 50px;
+	background-color: #2b2f3d;
+	border-radius:  25px 25px 0px 0px;
+	
+
+}
