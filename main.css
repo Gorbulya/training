@@ -1,7 +1,7 @@
-/*Разметка контейнера*/
-body {
-	background-color: #466874;
+link {
 }
+/*Разметка контейнера*/
+
 .container {
 	margin: 0 auto ;
 	width: 100%;
@@ -10,37 +10,43 @@ body {
 /*Разметка головы*/
 .header {
 	height: 100px;
-	background-color: #2b2f3d;
-	
 }
+/*Разметка зоны карт*/
 article {
-	
 	display: flex;
-	height: 400px;
-	background-color: #4f4e47;
-	color: #9f926e;
-
 }
-a {
-	text-decoration: none;
-	color: #f7f7e2
-}
+/*Тело карточки*/
 .item {
-	margin: 0 auto ;
-	
 	max-width: 200px;
 	justify-content: center;
-	width: 250px;
+	box-shadow:5px 2px 4px grey;
     height: 350px;
-    background-color: #9f926e;
     border-radius: 25px;
-    border: 1px solid 
+    margin-left: 200px;
+}
+h1 {
+    padding: 24px;
+    padding-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+   
+}
+h3 {
+    padding: 24px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+p {
+    margin-top: 25px;
+    text-align: justify;
+    padding: 24px;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
 }
 
 .head {
 	height: 50px;
-	background-color: #2b2f3d;
+	background-color: lightgray;
 	border-radius:  25px 25px 0px 0px;
-	
 
 }
