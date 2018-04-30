@@ -5,7 +5,7 @@ link {
 .container {
 	margin: 0 auto ;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 }
 /*Разметка головы*/
 .header {
@@ -49,4 +49,7 @@ p {
 	background-color: lightgray;
 	border-radius:  25px 25px 0px 0px;
 
+}
+a {
+    text-decoration: none;
 }
