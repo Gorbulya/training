@@ -1,5 +1,6 @@
 link {
 }
+
 /*Разметка контейнера*/
 
 .container {
@@ -17,24 +18,27 @@ article {
 }
 /*Тело карточки*/
 .item {
-	max-width: 200px;
+	width: 200px;
 	justify-content: center;
 	box-shadow:5px 2px 4px grey;
     height: 350px;
     border-radius: 25px;
     margin-left: 100px;
 }
+
 h1 {
     padding: 24px;
     padding-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-   
+    color: black;
 }
+
 h3 {
     padding: 24px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+    color:black;
 }
 p {
     margin-top: 25px;
@@ -48,8 +52,57 @@ p {
 	height: 50px;
 	background-color: lightgray;
 	border-radius:  25px 25px 0px 0px;
+}
 
+.foot {
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 0px 0px 25px 25px;
+    /* vertical-align: bottom; */
+    /* display: inline-block; */
+    margin-top: 17px;
 }
 a {
     text-decoration: none;
 }
+/* анимация нажатия карт*/
+a:active {
+    position: relative;
+    top:5px;
+}
+
+.item:active {
+    box-shadow:1px 1px 1px grey;
+    
+}
+.icons {
+    float: left;
+    /* border: 1px solid #67bf95; */
+    border-radius: 50%;
+    line-height: 67px;
+    margin-left: 126px;
+    margin-top: -25px;
+    text-align: center;
+    color: black;
+    font-size: 45px;
+
+}
+
+/* Пример анимации
+.item:hover {
+    box-shadow:6px 7px 4px grey;
+    transition: 1s;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    max-width: 200px;
+    height: 350px;
+  }
+
+  to {
+    max-width: 210px;
+    height: 360px;
+  }
+} */

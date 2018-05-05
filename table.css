@@ -8,11 +8,12 @@
 /*Разметка головы*/
 .header {
 	height: 100px;
+	/*background-color: #729baf; */
 }
 
 /*Тело таблицы*/
 table {
-	
+	margin-top: 10px;
 	width:100%;
 	height: 100%;
 	box-shadow:5px 2px 4px grey;
@@ -25,4 +26,40 @@ table {
 tr:nth-child(odd) {
 	background: lightgray; /* Цвет фона */
 	
+}
+div {
+	padding-top: 25px;
+}
+.btn {
+	width: 240px;
+	height: 40px;
+	background-color: #f18077;
+	border-radius: 5px;
+	margin: 0 auto;
+	text-align: center;
+	font-variant: small-caps;
+	font-family: 'Roboto', sans-serif;
+	vertical-align: middle;
+	box-shadow:5px 2px 4px grey;
+	transition: background-color 0.5s ease;
+}
+a {
+	
+	text-decoration: none;
+	color: white;
+	
+}
+/* анимация нажатия кнопок*/
+.btn:hover {
+    background-color:  #d06f67;
+    
+}
+a:active {
+    position: relative;
+    top:5px;
+
+}
+.btn:active {
+	box-shadow:1px 1px 1px grey;
+
 }
