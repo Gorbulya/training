@@ -2,19 +2,42 @@ link {
 }
 
 /*Разметка контейнера*/
-
 .container {
 	margin: 0 auto ;
 	width: 100%;
 	max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.main {
+    flex: 1 0 auto;
 }
 /*Разметка головы*/
 .header {
 	height: 100px;
+    background-color: #097527;
+}
+.intro {
+    font-size: 30px;
+    padding-top: 33px;
+    float: left;
+}
+.logo {
+    float: left;
+    padding-top: 12px;
+    margin-left: 25px;
+}
+.logo i {
+    font-size: 75px;
+    color:white;
 }
 /*Разметка зоны карт*/
 article {
+    margin-top: 30px;
 	display: flex;
+    float: left;
+    margin-left: 55px;
 }
 /*Тело карточки*/
 .item {
@@ -23,7 +46,7 @@ article {
 	box-shadow:5px 2px 4px grey;
     height: 350px;
     border-radius: 25px;
-    margin-left: 100px;
+    background-color: #eaf6fd;
 }
 
 h1 {
@@ -31,7 +54,7 @@ h1 {
     padding-top: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    color: black;
+    color: white;
 }
 
 h3 {
@@ -50,16 +73,14 @@ p {
 
 .head {
 	height: 50px;
-	background-color: lightgray;
+	background-color: #097527;
 	border-radius:  25px 25px 0px 0px;
 }
 
-.foot {
+.footer.foot {
     height: 50px;
-    background-color: lightgray;
+    background-color: #097527;
     border-radius: 0px 0px 25px 25px;
-    /* vertical-align: bottom; */
-    /* display: inline-block; */
     margin-top: 17px;
 }
 a {
@@ -68,16 +89,13 @@ a {
 /* анимация нажатия карт*/
 a:active {
     position: relative;
-    top:5px;
-}
-
-.item:active {
-    box-shadow:1px 1px 1px grey;
     
+}
+.item:active {
+    box-shadow:1px 1px 1px grey; 
 }
 .icons {
     float: left;
-    /* border: 1px solid #67bf95; */
     border-radius: 50%;
     line-height: 67px;
     margin-left: 126px;
@@ -85,7 +103,6 @@ a:active {
     text-align: center;
     color: black;
     font-size: 45px;
-
 }
 
 /* Пример анимации
@@ -106,3 +123,77 @@ a:active {
     height: 360px;
   }
 } */
+
+
+.fixa {
+    margin-left: 55px;
+}
+
+/*Cайд с навигацией*/
+aside {
+    width: 205px;
+    padding: 40px 0 40px;
+    list-style-type: none;
+    text-align: right;
+    float: left;
+    border-right: 10px;
+}
+
+li {
+    width: 160px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #f76270;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: 'Roboto', sans-serif;
+    box-shadow:5px 2px 4px grey;
+    transition: background-color 0.5s ease;
+}
+/*Поведение кнопок при нажатии и наведении*/
+.item:hover {
+    box-shadow:5px 2px 20px grey;
+}
+li:hover {
+    box-shadow:5px 2px 20px grey;
+    transition: box-shadow 0.2s ease;
+    font-size: 17px;
+}
+li:active {
+    box-shadow:1px 1px 1px grey;
+    font-size: 16px;
+}
+.icon:hover {
+    font-size: 42px;
+}
+/*Заголовок на кнопках*/
+h2{
+    padding-top:17px;
+    color: white;
+    display: inline-block;
+}
+/*Заголовок с иконкой*/
+.icon {
+    font-size: 40px;
+    color: white;
+    padding-right: 50px;
+    padding-top: 5px;
+}
+.ccc {
+    position: relative;
+    top:-9px;
+    left:0px;
+}
+/*Разметка подвала*/
+.footer {
+    margin-top: 20px;
+    height: 10px;
+    background-color: #097527;
+     flex: 0 0 auto;
+}
+@media screen and (min-width: 700px) {
+    .article {
+    display: flex;
+    flex-direction: column;
+    }
+}
