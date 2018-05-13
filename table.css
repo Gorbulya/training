@@ -43,23 +43,19 @@ div {
 	box-shadow:5px 2px 4px grey;
 	transition: background-color 0.5s ease;
 }
+
 a {
-	
 	text-decoration: none;
 	color: white;
-	
 }
 /* анимация нажатия кнопок*/
 .btn:hover {
     background-color:  #d06f67;
-    
 }
 a:active {
     position: relative;
     top:5px;
-
 }
 .btn:active {
 	box-shadow:1px 1px 1px grey;
-
 }
