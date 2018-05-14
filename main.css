@@ -47,6 +47,7 @@ article {
     height: 350px;
     border-radius: 25px;
     background-color: #eaf6fd;
+
 }
 
 h1 {
@@ -86,6 +87,10 @@ p {
 a {
     text-decoration: none;
 }
+.act {
+    background-color: #097527;
+    color: white;
+}
 /* анимация нажатия карт*/
 a:active {
     position: relative;
@@ -101,7 +106,7 @@ a:active {
     margin-left: 126px;
     margin-top: -25px;
     text-align: center;
-    color: black;
+    color: #5d5d5d;
     font-size: 45px;
 }
 
@@ -197,3 +202,4 @@ h2{
     flex-direction: column;
     }
 }
+
